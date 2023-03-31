@@ -12,6 +12,7 @@
   <title>Canary Consultants | Accounting Stuff </title>
 </head>
 <body id="home">
+  
   <!-- Navbar -->
   <nav id="navbar">
        <h1 class="logo">
@@ -140,15 +141,25 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrHh8isAu3NGKaDxL0M7iIjliajGsaAoM&callback=initMap"
     async defer></script>
       <!--chatbot test-->
-    <script src="https://main.d3uwhgnhvs2lp2.amplifyapp.com/lex-web-ui-loader.min.js"></script>
-    <script>
-    var loaderOpts = {
-      baseUrl: 'https://main.d3uwhgnhvs2lp2.amplifyapp.com/',
-      shouldLoadMinDeps: true
-    };
-    var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-    loader.load()
-      .catch(function (error) { console.error(error); });
-    </script>
+   <script src="https://main.d2brbwdrlzdai5.amplifyapp.com//lex-web-ui-loader.min.js"></script>
+<script>
+  var loaderOpts = {
+    baseUrl: 'https://main.d2brbwdrlzdai5.amplifyapp.com/',
+    shouldLoadMinDeps: true
+  };
+  var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+  var chatbotUiConfig = {
+          /* Example of setting session attributes on parent page
+          lex: {
+            sessionAttributes: {
+              userAgent: navigator.userAgent,
+              QNAClientFilter: ''
+            }
+          }
+          */
+        };
+  loader.load(chatbotUiConfig)
+    .catch(function (error) { console.error(error); });
+</script>
 </body>
 </html>

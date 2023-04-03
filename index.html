@@ -9,74 +9,101 @@
   <link rel="stylesheet" href="./style/main.css">
   <meta name="description" content="Welcome to the world of Accounting">
   <meta name="keywords" name="accounting, accounting firm, accounts">
-  <title>Canary Consultants | Accounting Stuff </title>
+  <title> Home </title>
 </head>
 <body id="home">
-  
   <!-- Navbar -->
   <nav id="navbar">
        <h1 class="logo">
-          <span class="text-primary">
-            <i class="fas fa-book-open"></i>Canary
-          </span> Consultants
+            <a href="index.html"> <span class="text-primary">Canary Consultants</a> </span>
           </h1>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="accounting.html">Financial Services</a></li>
-            <li><a href="tax.html">Medical and Dental Practice Services</a></li>
-            <li><a href="payroll.html">Start-up Business Services</a></li>
-            <li><a href="additional.html">Additional Info</a></li>
-        </ul>
+
+          <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Who we Are
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="staff.html">Our Team</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">What we Do
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="financial.html">Financial Services</a>
+                <a href="medical.html">Medical & Dental Practice Services</a>
+                <a href="startup.html">Start-Up Business Services</a>
+              </div>
+            </div>
+          </div>
     </nav>
+
     <!-- Header: Showcase -->
     <header id="showcase">
       <div class="showcase-content">
-        <h1 class="l-heading">
-          Our Company
-        </h1>
-        <p class="lead">Canary Consultants is an accounting firm serving the metropolitan
-          Washington DC, Greater Northern Virginia and Maryland areas. Our firm consists of
-          board certified CPAs, Project Managers, IT Consultants and Cyber Security experts with
-          extensive experience in the fields of accounting, financial management, and
-          Cybersecurity. We provide value added services with a strong emphasis on
-          professionalism and quality in an environment of integrity, maturity, and respect.</br> <a>Our Mission is to achieve total client satisfaction by helping them make informed and
-            timely business decisions. Canary Consultants are your trustworthy business and cyber
-            security advisors. We strive towards progress as your business succeeds.</a> We approach every situation with purpose and pragmatism, taking on your challenges
-            as our own. We partner with our clients to prepare for change and deliver exceptional
-            results.</p>
-          <a href="#what" class="btn">Read
-            More</a>
+        <h1 class="l-heading"></h1>
       </div>
     </header>
-    <!-- Section: What we do -->
+
+    <!-- Section: Intro -->
     <section id="what" class="bg-light py-1">
       <div class="container">
-        <h2 class="m-heading text-center"><span class="text-primary">What</span>
-          We Do</h2>
+        <h2 class="m-heading text-center"><span class="text-primary"> Who we Are </span></h2>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-university fa-2x"></i>
+            <div>
+              <h3><a href="about.html"> About Us </a></h3>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-book-reader fa-2x"></i>
+            <div>
+              <h3><a href="staff.html"> Our Team </a></h3>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <div>
+              <h3><a href="contact.html"> Contact </a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-center"><span class="text-primary"> What we Do </span></h2>
           <div class="items">
             <div class="item">
               <i class="fas fa-university fa-2x"></i>
               <div>
-                <h3>Financial Services</h3>
+                <h3><a href="financial.html"> Financial Services </a></h3>
               </div>
             </div>
             <div class="item">
               <i class="fas fa-book-reader fa-2x"></i>
               <div>
-                <h3>Start-Up Business Services</h3>
-                </div>
+                <h3><a href="medical.html"> Medial & Dental Practices Services </a></h3>
+              </div>
             </div>
             <div class="item">
               <i class="fas fa-pencil-alt fa-2x"></i>
               <div>
-                <h3>Medial & Dental Practices Services</h3>
+                <h3><a href="startup.html"> Start-Up Business Services </a></h3>
               </div>
             </div>
           </div>
       </div>
     </section>
 
-    <!-- Section: Who we are -->
+    <!-- Section: Who we are TO BE MOVED
     <section id="who">
       <div class="who-img"></div>
       <div class="who-text bg-dark p-2">
@@ -88,8 +115,9 @@
           </ul>
       </div>
     </section>
+    -->
 
-    <!-- Section: Contact -->
+    <!-- Section: Contact TO BE MOVED
     <section id="contact">
       <div class="contact-form bg-primary p-2">
         <h2 class="m-heading">Contact Us</h2>
@@ -116,6 +144,8 @@
       </div>
       <div class="map"></div>
     </section>
+    -->
+
     <!-- Footer -->
     <footer id="main-footer"class="bg-dark text-center py-1">
       <div class="container">
@@ -128,38 +158,38 @@
       </div>
       </footer>
 
-    <!-- JQuery CDN -->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+      <!-- JQuery CDN -->
+      <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 
-    <!-- Local JS file -->
-    <script src="./js/app.js"></script>
+      <!-- Local JS file -->
+      <script src="./js/app.js"></script>
 
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrHh8isAu3NGKaDxL0M7iIjliajGsaAoM&callback=initMap"
-    async defer></script>
-      <!--chatbot test-->
-   <script src="https://d1wv2hnxj0dirj.cloudfront.net/lex-web-ui-loader.min.js"></script>
-<script>
-  var loaderOpts = {
-    baseUrl: 'https://d1wv2hnxj0dirj.cloudfront.net/',
-    shouldLoadMinDeps: true
-  };
-  var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-  var chatbotUiConfig = {
-          /* Example of setting session attributes on parent page
-          lex: {
-            sessionAttributes: {
-              userAgent: navigator.userAgent,
-              QNAClientFilter: ''
+      <!-- Google Maps -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrHh8isAu3NGKaDxL0M7iIjliajGsaAoM&callback=initMap"
+      async defer></script>
+        <!--chatbot test-->
+     <script src="https://d1wv2hnxj0dirj.cloudfront.net/lex-web-ui-loader.min.js"></script>
+  <script>
+    var loaderOpts = {
+      baseUrl: 'https://d1wv2hnxj0dirj.cloudfront.net/',
+      shouldLoadMinDeps: true
+    };
+    var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+    var chatbotUiConfig = {
+            /* Example of setting session attributes on parent page
+            lex: {
+              sessionAttributes: {
+                userAgent: navigator.userAgent,
+                QNAClientFilter: ''
+              }
             }
-          }
-          */
-        };
-  loader.load(chatbotUiConfig)
-    .catch(function (error) { console.error(error); });
-</script>
-</body>
-</html>
+            */
+          };
+    loader.load(chatbotUiConfig)
+      .catch(function (error) { console.error(error); });
+  </script>
+  </body>
+  </html>

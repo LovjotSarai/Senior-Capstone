@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+   initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/e7783e5772.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/main.css">
+  <meta name="description" content="Welcome to the world of Accounting">
+  <meta name="keywords" name="accounting, accounting firm, accounts">
+  <title>Staff</title>
+</head>
+
+<body id="home">
+
+  <!-- Navbar -->
+  <nav id="navbar">
+       <h1 class="logo">
+            <a href="index.html"> <span class="text-primary">Canary Consultants</a> </span>
+          </h1>
+
+          <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Who we Are
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="staff.html">Our Team</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">What we Do
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="financial.html">Financial Services</a>
+                <a href="medical.html">Medical & Dental Practice Services</a>
+                <a href="startup.html">Start-Up Business Services</a>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+  <!-- Header: Showcase -->
+  <header id="showcase">
+    <div class="showcase-content">
+      <h1 class="l-heading">
+        Our Team
+      </h1>
+      <p class="lead"></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="services">
+
+      <!-- Section: Who we are TO BE MOVED -->
+      <section id="who">
+        <div class="who-img"></div>
+        <div class="who-text bg-dark p-2">
+          <h2 class="m-heading"><span class="text-primary">Imran Khas, CPA</h2>
+        </div>
+      </section>
+
+  <!-- Body -->
+    <section id="what" class="bg-light py-1">
+      <div class="container">
+        <p class="lead"> Imran is an MBA (Finance) and CPA from State of Virginia. He brings more than 35 years of experience in
+        accounting, finance, product costing, management reporting, internal control improvements, regulatory compliance, and information systems. He has worked across several industries including telecommunications, bio, hospitality, high-tech, financial services, government contracting, and non-profits. His areas of expertise are as follows:
+      <br></br>
+          <div class="items">
+            <div class="item">
+              <i class="fas fa-university fa-2x"></i>
+              <div>
+                <h3><a>Reconciliation Experience</a></h3>
+              </div>
+            </div>
+            <div class="item">
+              <i class="fas fa-book-reader fa-2x"></i>
+              <div>
+                <h3><a>Technical Accounting & SEC Reporting</a></h3>
+              </div>
+            </div>
+            <div class="item">
+              <i class="fas fa-pencil-alt fa-2x"></i>
+              <div>
+                <h3><a>Financial Analysis & Management Reporting</a></h3>
+              </div>
+            </div>
+          <div class="item">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <div>
+              <h3><a>Revenue Reporting & Analysis</a></h3>
+            </div>
+          </div>
+        <div class="item">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3><a>Technology Transition</a></h3>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3><a>Manufacturing Environment</a></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2023, Canary Consultants, All Rights Reserved</p>
+    </div>
+    <div>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-facebook"></a>
+    </div>
+  </footer>
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- Local JS file -->
+  <script src="./js/app.js"></script>
+
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrHh8isAu3NGKaDxL0M7iIjliajGsaAoM&callback=initMap"
+    async defer></script>
+  <!--chatbot test-->
+  <script src="https://main.d3uwhgnhvs2lp2.amplifyapp.com/lex-web-ui-loader.min.js"></script>
+  <script>
+    var loaderOpts = {
+      baseUrl: 'https://main.d3uwhgnhvs2lp2.amplifyapp.com/',
+      shouldLoadMinDeps: true
+    };
+    var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+    loader.load()
+      .catch(function (error) { console.error(error); });
+  </script>
+</body>
+
+</html>

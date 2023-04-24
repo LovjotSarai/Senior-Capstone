@@ -45,8 +45,8 @@ p {
 }
 
 .bg-primary {
-  background: #93cb52;
-  color: #fff;
+  background: #333;
+  color: #f4f4f4;
 }
 
 .list {
@@ -63,6 +63,7 @@ p {
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
+  color: #ffffff;
 }
 
 .m-heading {
@@ -84,25 +85,31 @@ p {
 .p-2 { padding: 2rem; }
 .p-3 { padding: 3rem; }
 
+/* About Us button on Home */
 .btn {
   display: inline-block;
   color: #fff;
-  background: #93cb52;
+  background: #f1c232;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
 }
 
 .btn:hover {
-  background: #7ab436;
+  background: #7ab436; /*NOT SURE WHAT THIS IS FOR*/
 }
 
+/* Contact Us button on Home - NEED TO UPDATE
 .btn-dark {
-  background: #333;
+  background: #f1c232;
   color: #fff;
 }
 
+*/
+
 /* Navbar */
+
+/* MAY BE REMOVED */
 #navbar {
   display: flex;
   position: sticky;
@@ -127,14 +134,76 @@ p {
 }
 
 #navbar ul li a:hover {
-  background: #93cb52;
+  background: #f1c232;
   border-radius: 5px;
+}
+
+
+/* NEED FOR NAV BAR*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f1c232;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Showcase */
 #showcase {
-  background: #333 url(../images/canarycoalmine.png) no-repeat center center/cover;
-  height: 100vh;
+  background: #333 url(../images/canaryminer.webp) no-repeat center center/cover;
+  height: 50vh;
   color: #fff;
 }
 
@@ -147,14 +216,14 @@ p {
   height: 100%;
   padding: 0 2rem;
   /* Overlay */
-  top: 60px;
+  top: 100px;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.4);
 }
 
-/* Section: What we do */
+/* Section: What We Do -  */
 #what .items {
   display: flex;
   padding: 1rem;
@@ -166,14 +235,15 @@ p {
   padding: 1rem;
 }
 
+/* Circle Holders for Clipart */
 #what .items .item i {
-  background: #93cb52;
+  background: #f1c232;
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-/* Section: Who we are */
+/* Section: Who we are - TO BE MOVED
 #who {
   display: flex;
 }
@@ -183,9 +253,12 @@ p {
 }
 
 #who .who-img {
-  background: url('../images/whoweare.jpg') no-repeat 
+  background: url('../images/logo-color.png') no-repeat
   center center/cover;
+    padding-right: 127px;
 }
+
+*/
 
 /* Section: Clients */
 #clients .items {
@@ -198,7 +271,7 @@ p {
   width: 60%;
 }
 
-/* Section: Contact */
+/* CONTACT US - TO BE MOVED
 
 #contact {
   display: flex;
@@ -220,4 +293,138 @@ p {
 #contact .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: right;
+  text-decoration: none;
+  margin: 10px 5px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-instagram {
+  background: pink;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+*/
+
+/* accounting.html CSS (Services) */
+.container-1{
+  display:flex;
+  justify-content: center;
+}
+.container-2{
+  display:flex;
+  justify-content: center;
+  background-color: #333;
+}
+.cotainer-3{
+  /* margin-bottom: 150px; */
+  margin-left: 10px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+.container-1 div {
+  border:1px #ccc solid;
+  padding: 10px;
+}
+.container-2 div{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+.container-3 div{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.box-1{
+  flex: 2 1 auto;
+}
+.box-2{
+  flex: 2 1 auto;
+}
+.box-3{
+  flex: 2 1 auto;
+}
+.box-4{
+  flex: 2 1 auto;
+  color:white;
+}
+.box-5{
+  flex: 2 1 auto;
+  color: white;
+}
+.box-6{
+  flex: 2 1 auto;
+  color: white;
+}
+.box-7{
+  flex: 2 1 auto;
+  color: white;
+}
+/*In tax.html   */
+.cotainer-4 {
+  display: flex;
+  justify-content: center;
+}
+.container-4 div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+.box-tax1{
+  float: left;
+  justify-content: center;
+  border:solid;
+  border-left: none;
+}
+img{
+}
+.box-8{
+  flex: 2 1 auto;
+  margin-left: 10px;
+  border:solid;
+  border-left: none;
+}
+
+/*In payroll.html   */
+.container-5{
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+.container-4 div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+.box-9{
+  flex: 2 1 auto;
+  margin-left: 10px;
+  color:white;
+  margin-top: 10px;
+}
+.container-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.box-10 {
+  flex: 2 1 auto;
+  margin-left: 10px;
+  color:white;
+  margin-top: 10px;
 }

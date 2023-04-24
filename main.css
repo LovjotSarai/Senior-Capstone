@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.bg-primary {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+/* About Us button on Home */
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #f1c232;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436; /*NOT SURE WHAT THIS IS FOR*/
+}
+
+/* Contact Us button on Home - NEED TO UPDATE
+.btn-dark {
+  background: #f1c232;
+  color: #fff;
+}
+
+*/
+
+/* Navbar */
+
+/* MAY BE REMOVED */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #f1c232;
+  border-radius: 5px;
+}
+
+
+/* NEED FOR NAV BAR*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f1c232;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url(../images/canaryminer.webp) no-repeat center center/cover;
+  height: 50vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Section: What We Do -  */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Circle Holders for Clipart */
+#what .items .item i {
+  background: #f1c232;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: Who we are - TO BE MOVED
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url('../images/logo-color.png') no-repeat
+  center center/cover;
+    padding-right: 127px;
+}
+
+*/
+
+/* Section: Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* CONTACT US - TO BE MOVED
+
+#contact {
+  display: flex;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: right;
+  text-decoration: none;
+  margin: 10px 5px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-instagram {
+  background: pink;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+*/
+
+/* accounting.html CSS (Services) */
+.container-1{
+  display:flex;
+  justify-content: center;
+}
+.container-2{
+  display:flex;
+  justify-content: center;
+  background-color: #333;
+}
+.cotainer-3{
+  /* margin-bottom: 150px; */
+  margin-left: 10px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+.container-1 div {
+  border:1px #ccc solid;
+  padding: 10px;
+}
+.container-2 div{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+.container-3 div{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.box-1{
+  flex: 2 1 auto;
+}
+.box-2{
+  flex: 2 1 auto;
+}
+.box-3{
+  flex: 2 1 auto;
+}
+.box-4{
+  flex: 2 1 auto;
+  color:white;
+}
+.box-5{
+  flex: 2 1 auto;
+  color: white;
+}
+.box-6{
+  flex: 2 1 auto;
+  color: white;
+}
+.box-7{
+  flex: 2 1 auto;
+  color: white;
+}
+/*In tax.html   */
+.cotainer-4 {
+  display: flex;
+  justify-content: center;
+}
+.container-4 div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+.box-tax1{
+  float: left;
+  justify-content: center;
+  border:solid;
+  border-left: none;
+}
+img{
+}
+.box-8{
+  flex: 2 1 auto;
+  margin-left: 10px;
+  border:solid;
+  border-left: none;
+}
+
+/*In payroll.html   */
+.container-5{
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+.container-4 div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+.box-9{
+  flex: 2 1 auto;
+  margin-left: 10px;
+  color:white;
+  margin-top: 10px;
+}
+.container-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.box-10 {
+  flex: 2 1 auto;
+  margin-left: 10px;
+  color:white;
+  margin-top: 10px;
+}
